@@ -26,7 +26,7 @@ export default function Home({ allPostsData }: Props) {
       </Head>
       <section className={style9(utilStyles.headingMd)}>
         <p>
-          Hello, I'm <strong>Bryan</strong>. I'm a software engineer based in the Bay Area. You can cotact me on <Link href={"https://github.com/johanholmerin/style9"}>Twitter</Link>.
+          Hello, I&#39;m <strong>Bryan</strong>. I&#39;m a software engineer based in the Bay Area. You can cotact me on <Link href={"https://github.com/johanholmerin/style9"}>Twitter</Link>.
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
