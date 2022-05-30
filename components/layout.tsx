@@ -8,7 +8,7 @@ import { PropsWithChildren } from 'react';
 
 
 export const name = 'Bryan Lee';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Next.js Blog Website';
 
 interface Props {
     home?: boolean;

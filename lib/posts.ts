@@ -4,14 +4,14 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-const postsDirectory = path.join(process.cwd(), 'posts');
-
 export interface PostData extends matter.GrayMatterFile<string> {
     date: `${number}-${number}-${number}`;
     title: string;
     id: string;
     contentHtml: string;
 }
+
+const postsDirectory = path.join(process.cwd(), 'posts');
 
 export function getSortedPostsData() {
     // Get file names under /posts

@@ -3,12 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
-    "next": "latest",
+    "next": "canary",
     "react": "latest",
     "react-dom": "latest",
     "remark": "^14.0.2",
