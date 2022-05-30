@@ -5,19 +5,12 @@ import style9 from 'style9';
 import Layout, { siteTitle, name } from '../components/layout';
 import { utilStyles } from '../components/utils.styled';
 import { getSortedPostsData, PostData } from '../lib/posts';
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    }
-  }
-}
+import { GetStaticProps } from 'next';
 
 interface Props {
   allPostsData: PostData[]
 }
+
 export default function Home({ allPostsData }: Props) {
   return (
     <Layout home>
@@ -53,3 +46,12 @@ export default function Home({ allPostsData }: Props) {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    }
+  }
+};
