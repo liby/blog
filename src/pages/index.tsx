@@ -4,11 +4,12 @@ import Date from "../components/date";
 import style9 from "style9";
 import Layout, { siteTitle, name } from "../components/layout";
 import { utilStyles } from "../components/utils.styled";
-import { getSortedPostsData, PostData } from "../utils/posts";
 import { GetStaticProps } from "next";
+import { getAllPosts } from "../utils/blog";
+import { PostDetails } from "../types/blog.type";
 
 interface Props {
-  allPostsData: PostData[];
+  allPostsData: PostDetails[];
 }
 
 export default function Home({ allPostsData }: Props) {
@@ -28,18 +29,17 @@ export default function Home({ allPostsData }: Props) {
           <a href="https://github.com/liby/blog">here</a>.)
         </p>
       </section>
-      {/* Add this <section> tag below the existing <section> tag */}
       <section className={style9(utilStyles.headingMd, utilStyles.padding1px)}>
         <h2 className={style9(utilStyles.headingLg)}>Blog</h2>
         <ul className={style9(utilStyles.list)}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={style9(utilStyles.listItem)} key={id}>
-              <Link href={`/posts/${id}`}>
+          {allPostsData.map(({ slug, date, title, readingTime }) => (
+            <li className={style9(utilStyles.listItem)} key={title}>
+              <Link href={`/posts/${slug}`}>
                 <a>{title}</a>
               </Link>
               <br />
               <small className={style9(utilStyles.lightText)}>
-                <Date dateString={date} />
+                <Date dateString={date} /> &mdash; {readingTime}
               </small>
             </li>
           ))}
@@ -50,10 +50,11 @@ export default function Home({ allPostsData }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
+  const articles = await getAllPosts();
+
   return {
     props: {
-      allPostsData,
+      allPostsData: articles.reverse(),
     },
   };
 };

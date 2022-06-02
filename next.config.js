@@ -6,6 +6,13 @@ const withStyle9 = require("style9/next");
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = withStyle9()(withTM());
-
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  // experimental: {
+  //   reactRoot: true,
+  // },
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  ...withStyle9()(withTM()),
+};
 module.exports = nextConfig;
