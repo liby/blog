@@ -5,7 +5,7 @@ specifiers:
   '@next/mdx': 12.1.6
   '@types/mdx': 2.0.2
   '@types/node': 17.0.36
-  '@types/react': 18.0.10
+  '@types/react': 18.0.11
   date-fns: 2.28.0
   eslint: 8.17.0
   eslint-config-next: 12.1.6
@@ -40,7 +40,7 @@ dependencies:
 devDependencies:
   '@types/mdx': 2.0.2
   '@types/node': 17.0.36
-  '@types/react': 18.0.10
+  '@types/react': 18.0.11
   eslint: 8.16.0
   eslint-config-next: 12.1.6_ud5hlt5viq3sgudkwhukme332q
   eslint-config-prettier: 8.5.0_eslint@8.16.0
@@ -613,8 +613,8 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react/18.0.10:
-    resolution: {integrity: sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg==}
+  /@types/react/18.0.11:
+    resolution: {integrity: sha512-JxSwm54IgMW4XTR+zFF5QpNx4JITmFbB4WHR2J0vg9RpjNeyqEMlODXsD2e64br6GX70TL0UYjZJETpyyC1WdA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
