@@ -1,17 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
-import Date from "../components/date";
+import DateFormat from "#components/date";
 import style9 from "style9";
-import Layout, { siteTitle, name } from "../components/layout";
-import { utilStyles } from "../components/utils.styled";
-import { getSortedPostsData, PostData } from "../utils/posts";
-import { GetStaticProps } from "next";
+import Layout, { siteTitle } from "#components/layout";
+import { utilStyles } from "#components/utils.styled";
+import { InferGetStaticPropsType } from "next";
+import { allBlogs } from "contentlayer/generated";
 
-interface Props {
-  allPostsData: PostData[];
-}
-
-export default function Home({ allPostsData }: Props) {
+export default function Home({
+  posts,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout home>
       <Head>
@@ -32,14 +30,14 @@ export default function Home({ allPostsData }: Props) {
       <section className={style9(utilStyles.headingMd, utilStyles.padding1px)}>
         <h2 className={style9(utilStyles.headingLg)}>Blog</h2>
         <ul className={style9(utilStyles.list)}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={style9(utilStyles.listItem)} key={id}>
-              <Link href={`/posts/${id}`}>
+          {posts.map(({ publishedAt, title, slug, readingTime }) => (
+            <li className={style9(utilStyles.listItem)} key={title}>
+              <Link href={`/blog/${slug}`}>
                 <a>{title}</a>
               </Link>
               <br />
               <small className={style9(utilStyles.lightText)}>
-                <Date dateString={date} />
+                <DateFormat dateString={publishedAt} /> &mdash; {readingTime.text}
               </small>
             </li>
           ))}
@@ -48,12 +46,8 @@ export default function Home({ allPostsData }: Props) {
     </Layout>
   );
 }
+export const getStaticProps = () => {
+  const posts = allBlogs;
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
+  return { props: { posts } };
 };
