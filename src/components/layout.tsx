@@ -1,9 +1,9 @@
 import style9 from "style9";
-import { layoutStyles } from "./layout.styled";
+import { layoutStyles } from "../styles/layout.styled";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { utilStyles } from "./utils.styled";
+import { utilStyles } from "../styles/utils.styled";
 import { PropsWithChildren } from "react";
 
 export const name = "Bryan Lee";

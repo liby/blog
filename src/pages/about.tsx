@@ -1,5 +1,5 @@
 import Layout from "#components/layout";
-import { utilStyles } from "#components/utils.styled";
+import { utilStyles } from "#styles/utils.styled";
 import Head from "next/head";
 import style9 from "style9";
 import { useMDXComponent } from "next-contentlayer/hooks";

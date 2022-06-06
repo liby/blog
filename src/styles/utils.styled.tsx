@@ -1,6 +1,20 @@
 import style9 from "style9";
 
 export const { ...utilStyles } = style9.create({
+  documentBody: {
+    // "@media (prefers-color-scheme: light)": {
+    //   backgroundColor: "rgba(255, 255, 255, 1)",
+    //   color: "rgba(255, 255, 255, 1)",
+    // },
+  },
+
+  documentBodyDark: {
+    // "@media (prefers-color-scheme: dark)": {
+    //   backgroundColor: "rgba(0, 0, 0, 1)",
+    //   color: "rgba(0, 0, 0, 1)",
+    // },
+  },
+
   heading2Xl: {
     fontSize: "2.5rem",
     lineHeight: 1.2,

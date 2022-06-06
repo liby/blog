@@ -3,7 +3,7 @@ import { allBlogs, type Blog } from "contentlayer/generated";
 import Layout from "#components/layout";
 import DateFormat from "#components/date";
 import style9 from "style9";
-import { utilStyles } from "#components/utils.styled";
+import { utilStyles } from "#styles/utils.styled";
 import Head from "next/head";
 
 interface Params {

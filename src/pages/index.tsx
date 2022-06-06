@@ -3,15 +3,16 @@ import Link from "next/link";
 import DateFormat from "#components/date";
 import style9 from "style9";
 import Layout, { siteTitle } from "#components/layout";
-import { utilStyles } from "#components/utils.styled";
+import { utilStyles } from "#styles/utils.styled";
 import { InferGetStaticPropsType } from "next";
 import { allBlogs } from "contentlayer/generated";
+import Container from "#components/container";
 
 export default function Home({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Layout home>
+    <Container title="Blog - Bryan Lee" description="xxxx">
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -37,13 +38,14 @@ export default function Home({
               </Link>
               <br />
               <small className={style9(utilStyles.lightText)}>
-                <DateFormat dateString={publishedAt} /> &mdash; {readingTime.text}
+                <DateFormat dateString={publishedAt} /> &mdash;{" "}
+                {readingTime.text}
               </small>
             </li>
           ))}
         </ul>
       </section>
-    </Layout>
+    </Container>
   );
 }
 export const getStaticProps = () => {
