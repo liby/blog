@@ -14,7 +14,7 @@ specifiers:
   next-themes: 0.2.0
   next-transpile-modules: 9.0.0
   preact: 10.7.3
-  prettier: 2.6.2
+  prettier: 2.7.0
   react: 18.1.0
   react-dom: 18.1.0
   reading-time: 1.5.0
@@ -25,7 +25,7 @@ specifiers:
   rehype-slug: 5.0.1
   remark-gfm: 3.0.1
   rss: 1.2.2
-  style9: 0.13.2
+  style9: 0.13.3
   typescript: 4.7.3
 
 dependencies:
@@ -38,7 +38,7 @@ dependencies:
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   reading-time: 1.5.0
-  style9: 0.13.2_dfutuhwlf7dalvsjyrxwo5ljwy
+  style9: 0.13.3_dfutuhwlf7dalvsjyrxwo5ljwy
 
 devDependencies:
   '@types/node': 17.0.36
@@ -48,7 +48,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.17.0
   globby: 13.1.2
   next-transpile-modules: 9.0.0
-  prettier: 2.6.2
+  prettier: 2.7.0
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
   rehype-code-titles: 1.1.0
@@ -3952,8 +3952,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+  /prettier/2.7.0:
+    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -4431,8 +4431,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /style9/0.13.2_dfutuhwlf7dalvsjyrxwo5ljwy:
-    resolution: {integrity: sha512-uau3a2CDhZTf/OfB1tdpukHmprYL0JUyxEOY/UpzROA7aLbm4cE3JPSmjo2Uu+l0V1CYEuAtIXqZ1yYinbTmlw==}
+  /style9/0.13.3_dfutuhwlf7dalvsjyrxwo5ljwy:
+    resolution: {integrity: sha512-mQ39P2a4o5vHzy80vdpG4JfolQkBNxjvIvQen2JkM4/EdF4KEl0vOBCobD4Dd43aW2HoOzFuEVYHmsdmJoMs2g==}
     engines: {node: '>=12'}
     dependencies:
       '@babel/core': 7.18.2
@@ -4543,7 +4543,7 @@ packages:
     dev: true
 
   /to-fast-properties/2.0.0:
-    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
 
   /to-regex-range/5.0.1:
@@ -4716,7 +4716,7 @@ packages:
       punycode: 2.1.1
 
   /util-deprecate/1.0.2:
-    resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: false
 
   /uuid/8.3.2:
