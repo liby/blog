@@ -13,7 +13,7 @@ specifiers:
   next-contentlayer: 0.2.5
   next-themes: 0.2.0
   next-transpile-modules: 9.0.0
-  preact: 10.8.1
+  preact: 10.8.2
   prettier: 2.7.1
   react: 18.2.0
   react-dom: 18.2.0
@@ -34,7 +34,7 @@ dependencies:
   next: 12.1.6_w53b3ma4oycvgh3v4dwmhz6z6q
   next-contentlayer: 0.2.5_2nrpme5s5xmpdgccbbbdwhosda
   next-themes: 0.2.0_2nrpme5s5xmpdgccbbbdwhosda
-  preact: 10.8.1
+  preact: 10.8.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reading-time: 1.5.0
@@ -3943,8 +3943,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /preact/10.8.1:
-    resolution: {integrity: sha512-p5CKQ0MCEXTGKGOHiFaNE2V2nDq2hvDHykXvIlz+4lbfJ9umLZr8JS/fa1bXUwRcHXK+Ljk8zqmDhr25n0LtVg==}
+  /preact/10.8.2:
+    resolution: {integrity: sha512-AKGt0BsDSiAYzVS78jZ9qRwuorY2CoSZtf1iOC6gLb/3QyZt+fLT09aYJBjRc/BEcRc4j+j3ggERMdNE43i1LQ==}
     dev: false
 
   /prelude-ls/1.2.1:
