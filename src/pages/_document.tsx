@@ -1,0 +1,50 @@
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from "next/document";
+import { CssBaseline } from "@geist-ui/core";
+
+class MyDocument extends Document {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const initialProps = await Document.getInitialProps(ctx);
+    const styles = CssBaseline.flush();
+
+    return {
+      ...initialProps,
+      styles: [initialProps.styles, styles],
+    };
+  }
+
+  render() {
+    return (
+      <Html lang="zh-cn">
+        <Head />
+        <body>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            (function(){
+              if (!window.localStorage) return;
+              if (window.localStorage.getItem('theme') === 'dark') {
+                document.documentElement.style.background = '#000';
+                document.body.style.background = '#000';
+              };
+            })()
+          `,
+            }}
+          />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default MyDocument;

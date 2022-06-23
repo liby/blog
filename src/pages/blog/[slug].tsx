@@ -5,6 +5,7 @@ import DateFormat from "#components/date";
 import style9 from "style9";
 import { utilStyles } from "#components/utils.styled";
 import Head from "next/head";
+import { useTheme } from "@geist-ui/core";
 
 interface Params {
   params: {
@@ -16,6 +17,7 @@ interface Props {
   post: Blog;
 }
 export default function Post({ post }: Props) {
+  const theme = useTheme();
   const Component = useMDXComponent(post.body.code);
 
   return (
@@ -26,7 +28,8 @@ export default function Post({ post }: Props) {
       <article>
         <h1 className={style9(utilStyles.headingXl)}>{post.title}</h1>
         <div className={style9(utilStyles.lightText)}>
-          <DateFormat dateString={post.publishedAt} /> &mdash; {post.readingTime.text}
+          <DateFormat dateString={post.publishedAt} /> &mdash;{" "}
+          {post.readingTime.text}
         </div>
         <div>
           <Component />
