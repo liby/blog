@@ -25,7 +25,7 @@ specifiers:
   rehype-slug: 5.0.1
   remark-gfm: 3.0.1
   rss: 1.2.2
-  style9: 0.13.3
+  style9: 0.14.0
   typescript: 4.7.4
 
 dependencies:
@@ -38,7 +38,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reading-time: 1.5.0
-  style9: 0.13.3_dfutuhwlf7dalvsjyrxwo5ljwy
+  style9: 0.14.0_dfutuhwlf7dalvsjyrxwo5ljwy
 
 devDependencies:
   '@types/node': 17.0.36
@@ -4511,8 +4511,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /style9/0.13.3_dfutuhwlf7dalvsjyrxwo5ljwy:
-    resolution: {integrity: sha512-mQ39P2a4o5vHzy80vdpG4JfolQkBNxjvIvQen2JkM4/EdF4KEl0vOBCobD4Dd43aW2HoOzFuEVYHmsdmJoMs2g==}
+  /style9/0.14.0_dfutuhwlf7dalvsjyrxwo5ljwy:
+    resolution: {integrity: sha512-zcKdz1GGM7kq8clEfAQ/2TV52d1hj+BgWPPGjqkjtUhP/i3qJq+nA4UJSgO67T7UQPax56tmOQs4y1AZrv9FTw==}
     engines: {node: '>=12'}
     dependencies:
       '@babel/core': 7.18.2
