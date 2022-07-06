@@ -13,7 +13,7 @@ specifiers:
   next-contentlayer: 0.2.5
   next-themes: 0.2.0
   next-transpile-modules: 9.0.0
-  preact: 10.8.2
+  preact: 10.9.0
   prettier: 2.7.1
   react: 18.2.0
   react-dom: 18.2.0
@@ -34,7 +34,7 @@ dependencies:
   next: 12.2.0_w53b3ma4oycvgh3v4dwmhz6z6q
   next-contentlayer: 0.2.5_24lkarzjpo3wcmj2o6qyrkug4y
   next-themes: 0.2.0_24lkarzjpo3wcmj2o6qyrkug4y
-  preact: 10.8.2
+  preact: 10.9.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reading-time: 1.5.0
@@ -4018,8 +4018,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact/10.8.2:
-    resolution: {integrity: sha512-AKGt0BsDSiAYzVS78jZ9qRwuorY2CoSZtf1iOC6gLb/3QyZt+fLT09aYJBjRc/BEcRc4j+j3ggERMdNE43i1LQ==}
+  /preact/10.9.0:
+    resolution: {integrity: sha512-jO6/OvCRL+OT8gst/+Q2ir7dMybZAX8ioP02Zmzh3BkQMHLyqZSujvxbUriXvHi8qmhcHKC2Gwbog6Kt+YTh+Q==}
     dev: false
 
   /prelude-ls/1.2.1:
