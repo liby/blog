@@ -21,7 +21,7 @@ specifiers:
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
   rehype-code-titles: 1.1.0
-  rehype-prism-plus: 1.4.2
+  rehype-prism-plus: 1.4.3
   rehype-slug: 5.0.1
   remark-gfm: 3.0.1
   rss: 1.2.2
@@ -52,7 +52,7 @@ devDependencies:
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
   rehype-code-titles: 1.1.0
-  rehype-prism-plus: 1.4.2
+  rehype-prism-plus: 1.4.3
   rehype-slug: 5.0.1
   remark-gfm: 3.0.1
   rss: 1.2.2
@@ -4213,8 +4213,8 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /rehype-prism-plus/1.4.2:
-    resolution: {integrity: sha512-RQNQJIRiejJ6lUh8nm04jEoR0bSsWl2i4R0MXpJtvlRzwTU1D7qdHGT0veCIvuhXPRP4G7Obo4VGwOVAfOtXZw==}
+  /rehype-prism-plus/1.4.3:
+    resolution: {integrity: sha512-kdSrqPVY6OJx+nCPgdZeEEysKqquj2uzD9ygRd7XBH2DK4QCv4ihh9VV+YffjR16/xFgL+2bo9MDtVWjQbf5KA==}
     dependencies:
       hast-util-to-string: 2.0.0
       parse-numeric-range: 1.3.0
