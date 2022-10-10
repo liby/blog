@@ -12,7 +12,7 @@ specifiers:
   next: 12.3.1
   next-contentlayer: 0.2.5
   next-themes: 0.2.1
-  next-transpile-modules: 9.0.0
+  next-transpile-modules: 9.1.0
   preact: 10.11.1
   prettier: 2.7.1
   react: 18.2.0
@@ -47,7 +47,7 @@ devDependencies:
   eslint-config-next: 12.3.1_z4bbprzjrhnsfa24uvmcbu7f5q
   eslint-config-prettier: 8.5.0_eslint@8.25.0
   globby: 13.1.2
-  next-transpile-modules: 9.0.0
+  next-transpile-modules: 9.1.0
   prettier: 2.7.1
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
@@ -1733,8 +1733,8 @@ packages:
     engines: {node: '>= 4'}
     dev: false
 
-  /enhanced-resolve/5.9.3:
-    resolution: {integrity: sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==}
+  /enhanced-resolve/5.10.0:
+    resolution: {integrity: sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.10
@@ -3766,10 +3766,10 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next-transpile-modules/9.0.0:
-    resolution: {integrity: sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ==}
+  /next-transpile-modules/9.1.0:
+    resolution: {integrity: sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA==}
     dependencies:
-      enhanced-resolve: 5.9.3
+      enhanced-resolve: 5.10.0
       escalade: 3.1.1
     dev: true
 
@@ -4952,7 +4952,7 @@ packages:
       acorn-import-assertions: 1.8.0_acorn@8.8.0
       browserslist: 4.20.3
       chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.9.3
+      enhanced-resolve: 5.10.0
       es-module-lexer: 0.9.3
       eslint-scope: 5.1.1
       events: 3.3.0
