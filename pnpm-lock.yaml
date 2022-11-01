@@ -12,7 +12,7 @@ specifiers:
   next: 12.3.2
   next-contentlayer: 0.2.5
   next-themes: 0.2.1
-  next-transpile-modules: 9.1.0
+  next-transpile-modules: 10.0.0
   preact: 10.11.2
   prettier: 2.7.1
   react: 18.2.0
@@ -47,7 +47,7 @@ devDependencies:
   eslint-config-next: 12.3.2_wyqvi574yv7oiwfeinomdzmc3m
   eslint-config-prettier: 8.5.0_eslint@8.26.0
   globby: 13.1.2
-  next-transpile-modules: 9.1.0
+  next-transpile-modules: 10.0.0
   prettier: 2.7.1
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
@@ -1999,6 +1999,7 @@ packages:
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
+    dev: false
 
   /escape-string-regexp/1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
@@ -3772,11 +3773,10 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next-transpile-modules/9.1.0:
-    resolution: {integrity: sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA==}
+  /next-transpile-modules/10.0.0:
+    resolution: {integrity: sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==}
     dependencies:
       enhanced-resolve: 5.10.0
-      escalade: 3.1.1
     dev: true
 
   /next/12.3.2_w53b3ma4oycvgh3v4dwmhz6z6q:
