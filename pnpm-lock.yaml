@@ -25,7 +25,7 @@ specifiers:
   rehype-slug: 5.1.0
   remark-gfm: 3.0.1
   rss: 1.2.2
-  style9: 0.15.0
+  style9: 0.15.1
   typescript: 4.8.4
 
 dependencies:
@@ -38,7 +38,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reading-time: 1.5.0
-  style9: 0.15.0_dfutuhwlf7dalvsjyrxwo5ljwy
+  style9: 0.15.1_dfutuhwlf7dalvsjyrxwo5ljwy
 
 devDependencies:
   '@types/node': 18.11.9
@@ -3003,14 +3003,6 @@ packages:
     dependencies:
       minimist: 1.2.6
 
-  /json5/2.2.0:
-    resolution: {integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==}
-    engines: {node: '>=6'}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.6
-    dev: false
-
   /json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
     engines: {node: '>=6'}
@@ -3061,8 +3053,8 @@ packages:
     engines: {node: '>=6.11.5'}
     dev: false
 
-  /loader-utils/1.4.0:
-    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==}
+  /loader-utils/1.4.1:
+    resolution: {integrity: sha512-1Qo97Y2oKaU+Ro2xnDMR26g1BwMT29jNbem1EvcujW2jqt+j5COXyscjM7bLQkM9HaxI7pkWeW7gnI072yMI9Q==}
     engines: {node: '>=4.0.0'}
     dependencies:
       big.js: 5.2.2
@@ -4564,8 +4556,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /style9/0.15.0_dfutuhwlf7dalvsjyrxwo5ljwy:
-    resolution: {integrity: sha512-Gw9+38nNAdsI6V2L/MAf681o3d88rRzgSAqc+zaAlK2nYsHA/7VJyrfU03Ijbevb52JiClN0SG4bsY1TcbfYJQ==}
+  /style9/0.15.1_dfutuhwlf7dalvsjyrxwo5ljwy:
+    resolution: {integrity: sha512-AQo5D5sKwC0hJmEuRRppckJYqY5ZjCOIDOtrvTY3z7wKGDTggZSbsb1/Zj/y9PjXxgFRXi+CWe5jLpu18ztyUA==}
     engines: {node: '>=12'}
     dependencies:
       '@babel/core': 7.18.2
@@ -4574,9 +4566,9 @@ packages:
       csstype: 3.1.0
       fast-json-stable-stringify: 2.1.0
       inline-style-expand-shorthand: 1.4.0
-      json5: 2.2.0
+      json5: 2.2.1
       known-css-properties: 0.19.0
-      loader-utils: 1.4.0
+      loader-utils: 1.4.1
       mini-css-extract-plugin: 1.6.2_webpack@5.73.0
       murmurhash-js: 1.0.0
       postcss: 8.4.14
