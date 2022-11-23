@@ -14,7 +14,7 @@ specifiers:
   next-themes: 0.2.1
   next-transpile-modules: 10.0.0
   preact: 10.11.3
-  prettier: 2.7.1
+  prettier: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
   reading-time: 1.5.0
@@ -48,7 +48,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.28.0
   globby: 13.1.2
   next-transpile-modules: 10.0.0
-  prettier: 2.7.1
+  prettier: 2.8.0
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
   rehype-code-titles: 1.1.0
@@ -4072,8 +4072,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
