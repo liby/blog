@@ -25,7 +25,7 @@ specifiers:
   rehype-slug: 5.1.0
   remark-gfm: 3.0.1
   rss: 1.2.2
-  style9: 0.16.0
+  style9: 0.16.1
   typescript: 4.9.4
 
 dependencies:
@@ -38,7 +38,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   reading-time: 1.5.0
-  style9: 0.16.0_dfutuhwlf7dalvsjyrxwo5ljwy
+  style9: 0.16.1_dfutuhwlf7dalvsjyrxwo5ljwy
 
 devDependencies:
   '@types/node': 18.11.18
@@ -97,7 +97,7 @@ packages:
       convert-source-map: 1.8.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
-      json5: 2.2.1
+      json5: 2.2.3
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
@@ -3022,9 +3022,10 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.6
+    dev: true
 
-  /json5/2.2.1:
-    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
+  /json5/2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
     dev: false
@@ -3073,22 +3074,18 @@ packages:
     engines: {node: '>=6.11.5'}
     dev: false
 
-  /loader-utils/1.4.2:
-    resolution: {integrity: sha512-I5d00Pd/jwMD2QCduo657+YM/6L3KZu++pmX9VFncxaxvHcru9jx1lBaFft+r4Mt2jK0Yhp41XlRAihzPxHNCg==}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 1.0.1
-    dev: false
-
   /loader-utils/2.0.2:
     resolution: {integrity: sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==}
     engines: {node: '>=8.9.0'}
     dependencies:
       big.js: 5.2.2
       emojis-list: 3.0.0
-      json5: 2.2.1
+      json5: 2.2.3
+    dev: false
+
+  /loader-utils/3.2.1:
+    resolution: {integrity: sha512-ZvFw1KWS3GVyYBYb7qkmRM/WwL2TQQBxgCK62rlvm4WpVQ23Nb4tYjApUlfjrEGvOs7KHEsmyUn75OHZrJMWPw==}
+    engines: {node: '>= 12.13.0'}
     dev: false
 
   /locate-path/2.0.0:
@@ -3721,6 +3718,7 @@ packages:
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+    dev: true
 
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -4567,8 +4565,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /style9/0.16.0_dfutuhwlf7dalvsjyrxwo5ljwy:
-    resolution: {integrity: sha512-zkq3MIg8HPW0H2U1TrM0mJSdqqmVR8AAGedCRjPuppd3ysPEmSPKmT43aw8KlOii30rdnatYwA8ErVsz1yR8vg==}
+  /style9/0.16.1_dfutuhwlf7dalvsjyrxwo5ljwy:
+    resolution: {integrity: sha512-0N+CV/NuMqhORyXZiou4E7jrTNnGa14t4yP0dYV0e2HX0JWoH1i85bB8ah5VoqRUXImCCbWOHWZ2SszFNdfFnw==}
     engines: {node: '>=14'}
     dependencies:
       '@babel/core': 7.18.2
@@ -4577,9 +4575,9 @@ packages:
       csstype: 3.1.0
       fast-json-stable-stringify: 2.1.0
       inline-style-expand-shorthand: 1.4.0
-      json5: 2.2.1
+      json5: 2.2.3
       known-css-properties: 0.19.0
-      loader-utils: 1.4.2
+      loader-utils: 3.2.1
       mini-css-extract-plugin: 1.6.2_webpack@5.73.0
       murmurhash-js: 1.0.0
       postcss: 8.4.14
