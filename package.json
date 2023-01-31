@@ -16,7 +16,7 @@
     "format:check": "prettier --ignore-path .gitignore --check ."
   },
   "dependencies": {
-    "contentlayer": "0.2.9",
+    "contentlayer": "0.3.0",
     "date-fns": "2.29.3",
     "next": "12.3.4",
     "next-contentlayer": "0.2.9",
