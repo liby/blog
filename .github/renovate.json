@@ -2,27 +2,16 @@
   "semanticCommits": true,
   "packageRules": [
     {
-      "updateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
+      "updateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
     },
     {
-      "depTypeList": [
-        "devDependencies"
-      ],
+      "depTypeList": ["devDependencies"],
       "automerge": true
     },
     {
-      "excludePackagePatterns": [
-        "contentlayer$"
-      ]
+      "excludePackagePatterns": ["contentlayer$"]
     }
   ],
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"]
 }

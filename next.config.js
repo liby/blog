@@ -1,7 +1,6 @@
 // @ts-check
 const { withContentlayer } = require("next-contentlayer");
-const withTM = require("next-transpile-modules")(["style9"]);
-const withStyle9 = require("style9/next");
+const withStyle9 = require('style9-webpack/next');
 
 function compose(
   /**
@@ -42,10 +41,10 @@ const nextConfig = {
 
 module.exports = compose(
   withContentlayer,
+  // @ts-ignore
   withStyle9({
-    parserOptions: {
-      plugins: ["typescript", "jsx", "importAssertions"],
-    },
-  }),
-  withTM
+    parserOptions: {plugins: ['typescript', 'jsx', 'importAssertions'] }, // // {import('@babel/core').ParserOptions} optional, default is `{ plugins: ['typescript', 'jsx'] }`
+    minifyProperties: process.env.NODE_ENV === 'production', // {boolean?} optional, default is false, recommended to enable this option in production
+    incrementalClassnames: false, // {boolean?} optional, default is false
+  })
 )(nextConfig);

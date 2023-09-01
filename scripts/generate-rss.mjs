@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import RSS from "rss";
-import { allPosts } from "../.contentlayer/generated/Post/_index.mjs";
+import { allBlogs } from "../.contentlayer/generated/Blog/_index.mjs";
 
 async function generate() {
   const feed = new RSS({
@@ -9,7 +9,7 @@ async function generate() {
     feed_url: "https://liby.github.io/feed.xml",
   });
 
-  allPosts.map((post) => {
+  allBlogs.map((post) => {
     feed.item({
       title: post.title,
       url: `https://liby.github.io/blog/${post.slug}`,

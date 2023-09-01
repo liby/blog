@@ -26,7 +26,8 @@ export default function Post({ post }: Props) {
       <article>
         <h1 className={style9(utilStyles.headingXl)}>{post.title}</h1>
         <div className={style9(utilStyles.lightText)}>
-          <DateFormat dateString={post.publishedAt} /> &mdash; {post.readingTime.text}
+          <DateFormat dateString={post.publishedAt} /> &mdash;{" "}
+          {post.readingTime.text}
         </div>
         <div>
           <Component />

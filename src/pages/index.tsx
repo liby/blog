@@ -33,11 +33,12 @@ export default function Home({
           {posts.map(({ publishedAt, title, slug, readingTime }) => (
             <li className={style9(utilStyles.listItem)} key={title}>
               <Link href={`/blog/${slug}`}>
-                <a>{title}</a>
+                {title}
               </Link>
               <br />
               <small className={style9(utilStyles.lightText)}>
-                <DateFormat dateString={publishedAt} /> &mdash; {readingTime.text}
+                <DateFormat dateString={publishedAt} /> &mdash;{" "}
+                {readingTime.text}
               </small>
             </li>
           ))}
