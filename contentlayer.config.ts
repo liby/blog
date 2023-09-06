@@ -6,9 +6,8 @@ import {
 import readingTime from "reading-time";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
-import rehypeCodeTitles from "rehype-code-titles";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypePrism from "rehype-prism-plus";
+import rehypePrettyCode from "rehype-pretty-code";
 
 const computedFields: ComputedFields = {
   readingTime: { type: "json", resolve: (doc) => readingTime(doc.body.raw) },
@@ -45,6 +44,16 @@ const OtherPage = defineDocumentType(() => ({
   computedFields,
 }));
 
+interface PrettyCodeNode {
+  type: string;
+  tagName: string;
+  properties: {
+    className: string[] | undefined;
+    "data-line": "";
+  };
+  children: any[];
+}
+
 export default makeSource({
   contentDirPath: "content",
   documentTypes: [Blog, OtherPage],
@@ -52,8 +61,26 @@ export default makeSource({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
-      rehypeCodeTitles,
-      rehypePrism,
+      [
+        // @ts-expect-error: due to vfile version issue
+        rehypePrettyCode,
+        {
+          theme: 'one-dark-pro',
+          onVisitLine(node: PrettyCodeNode) {
+            // Prevent lines from collapsing in `display: grid` mode, and allow empty
+            // lines to be copy/pasted
+            if (node.children.length === 0) {
+              node.children = [{ type: 'text', value: ' ' }];
+            }
+          },
+          onVisitHighlightedLine(node: PrettyCodeNode) {
+            node.properties.className?.push('line--highlighted');
+          },
+          onVisitHighlightedWord(node: PrettyCodeNode) {
+            node.properties.className = ['word--highlighted'];
+          },
+        },
+      ],
       [
         rehypeAutolinkHeadings,
         {
