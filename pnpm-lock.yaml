@@ -21,8 +21,8 @@ dependencies:
     specifier: 0.2.1
     version: 0.2.1(next@13.5.3)(react-dom@18.2.0)(react@18.2.0)
   preact:
-    specifier: 10.17.1
-    version: 10.17.1
+    specifier: 10.18.0
+    version: 10.18.0
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -4625,8 +4625,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact@10.17.1:
-    resolution: {integrity: sha512-X9BODrvQ4Ekwv9GURm9AKAGaomqXmip7NQTZgY7gcNmr7XE83adOMJvd3N42id1tMFU7ojiynRsYnY6/BRFxLA==}
+  /preact@10.18.0:
+    resolution: {integrity: sha512-O4dGFmErPd3RNVDvXmCbOW6hetnve6vYtjx5qf51mCUmBS96s66MrNQkEII5UThDGoNF7953ptA+aNupiDxVeg==}
     dev: false
 
   /prelude-ls@1.2.1:
