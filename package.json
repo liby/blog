@@ -23,7 +23,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "reading-time": "1.5.0",
-    "rehype-pretty-code": "^0.10.1",
+    "rehype-pretty-code": "^0.11.0",
     "style9": "0.18.2",
     "style9-webpack": "^0.5.1",
     "rehype": "13.0.1",
