@@ -33,7 +33,7 @@
     "rss": "1.2.2"
   },
   "devDependencies": {
-    "@types/node": "20.12.6",
+    "@types/node": "20.12.7",
     "@types/react": "18.2.75",
     "eslint": "9.0.0",
     "eslint-config-next": "13.5.6",
