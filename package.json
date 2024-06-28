@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/node": "20.14.9",
     "@types/react": "18.3.3",
-    "eslint": "9.5.0",
+    "eslint": "9.6.0",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "9.1.0",
     "globby": "14.0.1",
